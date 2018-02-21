@@ -27,5 +27,9 @@ namespace Animals
             this.Init();
 
         }
+        public void PrintBreedFamily()
+        {
+            Console.WriteLine(this.BreedFamily);
+        }
     }
 }
