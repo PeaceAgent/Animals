@@ -16,15 +16,19 @@ namespace Animals
             this.FavoriteToy = favoriteToy;
             Console.WriteLine("DomesticMammal Created");
         }
-        public DomesticMammal(string name, int age, string favoriteToy) : base(age)
+        public virtual void Talk()
         {
-            this.Init(name, favoriteToy);
+            Console.WriteLine(String.Format("{0}: talks", this.Name));
+        }
+       public DomesticMammal(string name, int age, string favoriteToy) : base(age)
+        {
+           this.Init(name, favoriteToy);
 
         }
 
-        public DomesticMammal(string name, int age, string favoriteToy, bool isPregnant) : base(age, isPregnant)
+       public DomesticMammal(string name, int age, string favoriteToy, bool isPregnant) : base(age, isPregnant)
         {
-            this.Init(name, favoriteToy);
+           this.Init(name, favoriteToy);
 
         }
     }
