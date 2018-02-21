@@ -31,5 +31,17 @@ namespace Animals
         {
             Console.WriteLine(this.BreedFamily);
         }
+        public override void Talk()
+        {
+            this.Bark();
+        }
+        public void Bark()
+        {
+            PrintBark(1, null, false);
+        }
+        private void PrintBark(int times, DomesticMammal otherdomesticMammal, bool isAngry)
+        {
+
+        }
     }
 }
