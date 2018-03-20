@@ -10,6 +10,10 @@ namespace Animals
     {
         static void Main(string[] args)
         {
+            Dog myDog = new Dog("Peppa", 4, "Fluffy Bear");
+            Dog myOtherDog = new Dog("Preggo Peppa", 5, "Jack", true);
+            Console.WriteLine("It worked, congrats :) ");
+            Console.ReadLine();
         }
     }
 }

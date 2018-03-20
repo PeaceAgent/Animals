@@ -17,13 +17,20 @@ namespace Animals
             Console.WriteLine("Dog created");
         }
         public Dog(string name, int age, string favoriteToy, bool isPregnant) : base(name, age, favoriteToy, isPregnant)
-        { 
+        {
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Favorite Toy: " + favoriteToy);
+            Console.WriteLine("Is Pregnant: " + isPregnant.ToString());
             this.Init();
 
         }
         
         public Dog(string name, int age, string favoriteToy) : base(name, age, favoriteToy)
-        { 
+        {
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Favorite Toy: " + favoriteToy);
             this.Init();
 
         }
