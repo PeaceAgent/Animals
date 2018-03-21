@@ -14,6 +14,7 @@ namespace Animals
             Dog myOtherDog = new Dog("Preggo Peppa", 5, "Jack", true);
             Console.WriteLine("It worked, congrats :) ");
             Console.WriteLine("GitHub problems are solved");
+            Console.WriteLine("GitHub problem is not solved");
             Console.ReadLine();
         }
     }
